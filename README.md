@@ -1,5 +1,6 @@
-# Parallax-Scrolling-Effect
-
-![Alt Text](https://github.com/vardhinii/Parallax-Scrolling-Effect/blob/main/final-look/demo.gif)
+# Parallax Scrolling Effect
+<p align="center">
+  <img src="final-look/demo.gif" alt="animated"  width="100%"/>
+</p>
 
      
