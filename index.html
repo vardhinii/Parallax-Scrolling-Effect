@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Parallax Scrolling Website</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <header id="header">
+      <a href="#" class="logo">Alien Planet</a>
+      <ul>
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Destination</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </header>
+    <section>
+      <img
+        src="C:\Users\VARDHINI KUMAAR\Downloads\Untitled design (6).png"
+        id="stars"
+      />
+      <img
+        src="C:\Users\VARDHINI KUMAAR\Downloads\Untitled design (3) (1) (1).png"
+        id="moon3"
+      />
+
+      <h2 id="text"><span>Its time for new</span><br />Adventure</h2>
+      <img
+        src="C:\Users\VARDHINI KUMAAR\Downloads\Untitled design (2).png"
+        id="moon1"
+      />
+      <img
+        src="C:\Users\VARDHINI KUMAAR\Downloads\Untitled design (1).png"
+        id="moon2"
+      />
+
+      <a href="#" id="btn">Explore</a>
+      <img
+        src="C:\Users\VARDHINI KUMAAR\Downloads\Untitled design (4).png"
+        id="land1"
+      />
+    </section>
+    <div class="sec">
+      <h2>Parallax Scrolling Effects</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
+        quis ante ex. Phasellus dapibus id orci ac suscipit. Nullam in odio
+        ante. Morbi nulla augue, auctor at augue quis, tempus finibus tellus.
+        Nam eget dolor ut ex auctor placerat et ut arcu. Vivamus iaculis nisi
+        purus, eget egestas mi fermentum in. Sed mattis rutrum risus sed
+        fermentum. Integer dapibus blandit vehicula. Vivamus malesuada leo eros,
+        sed faucibus nisi consectetur at. Etiam dictum, lorem ac pulvinar
+        aliquet, eros risus scelerisque tellus, eu pulvinar metus eros ut magna.
+        Ut feugiat mauris eros, in sollicitudin lacus sagittis eu. Donec id
+        eleifend libero. Quisque at augue sit amet ex porttitor consequat quis
+        quis ante. Etiam urna quam, scelerisque nec condimentum nec, ullamcorper
+        a urna.<br /><br />Lorem ipsum dolor sit amet, consectetur adipiscing
+        elit. Pellentesque quis ante ex. Phasellus dapibus id orci ac suscipit.
+        Nullam in odio ante. Morbi nulla augue, auctor at augue quis, tempus
+        finibus tellus. Nam eget dolor ut ex auctor placerat et ut arcu. Vivamus
+        iaculis nisi purus, eget egestas mi fermentum in. Sed mattis rutrum
+        risus sed fermentum. Integer dapibus blandit vehicula. Vivamus malesuada
+        leo eros, sed faucibus nisi consectetur at. Etiam dictum, lorem ac
+        pulvinar aliquet, eros risus scelerisque tellus, eu pulvinar metus eros
+        ut magna. Ut feugiat mauris eros, in sollicitudin lacus sagittis eu.
+        Donec id eleifend libero. Quisque at augue sit amet ex porttitor
+        consequat quis quis ante. Etiam urna quam, scelerisque nec condimentum
+        nec, ullamcorper a urna.<br /><br />Lorem ipsum dolor sit amet,
+        consectetur adipiscing elit. Pellentesque quis ante ex. Phasellus
+        dapibus id orci ac suscipit. Nullam in odio ante. Morbi nulla augue,
+        auctor at augue quis, tempus finibus tellus. Nam eget dolor ut ex auctor
+        placerat et ut arcu. Vivamus iaculis nisi purus, eget egestas mi
+        fermentum in. Sed mattis rutrum risus sed fermentum. Integer dapibus
+        blandit vehicula. Vivamus malesuada leo eros, sed faucibus nisi
+        consectetur at. Etiam dictum, lorem ac pulvinar aliquet, eros risus
+        scelerisque tellus, eu pulvinar metus eros ut magna. Ut feugiat mauris
+        eros, in sollicitudin lacus sagittis eu. Donec id eleifend libero.
+        Quisque at augue sit amet ex porttitor consequat quis quis ante. Etiam
+        urna quam, scelerisque nec condimentum nec, ullamcorper a urna.
+      </p>
+    </div>
+    <script>
+      let stars = document.getElementById("stars");
+      let text = document.getElementById("text");
+      let moon1 = document.getElementById("moon1");
+      let moon2 = document.getElementById("moon2");
+      let btn = document.getElementById("btn");
+      let moon3 = document.getElementById("moon3");
+      let land1 = document.getElementById("land1");
+      let header = document.getElementById("header");
+
+      window.addEventListener("scroll", function () {
+        let value = window.scrollY;
+
+        text.style.top = 40 + value * -0.2 + "%";
+        moon1.style.top = value * -1.5 + "px";
+        moon1.style.left = value * 3 + "px";
+        moon2.style.top = value * -1.5 + "px";
+        moon2.style.left = value * -5 + "px";
+        btn.style.marginTop = value * -0.12 + "px";
+        moon3.style.left = value * 4 + "px";
+        land1.style.top = value * -0.12 + "px";
+        header.style.top = value * 0.5 + "px";
+      });
+    </script>
+  </body>
+</html>
