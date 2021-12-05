@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Lobster+Two:wght@700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Balsamiq Sans", cursive;
+}
+body {
+  overflow-x: hidden;
+  background: #fff;
+  min-height: 100vh;
+  background: linear-gradient(#471699, #a155db, #5f5dc0);
+}
+#header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10000;
+}
+#header .logo {
+  color: white;
+  text-shadow: 2px 2px #4b0e99;
+  font-weight: 700;
+  font-size: 2em;
+  text-decoration: none;
+}
+#header ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#header ul li {
+  margin-left: 20px;
+  list-style-type: none;
+}
+#header ul li a {
+  text-decoration: none;
+  padding: 6px 15px;
+  color: #36e0fa;
+  border-radius: 21px;
+}
+#header ul li a:hover,
+#header ul li a.active {
+  background: whitesmoke;
+  color: #393885;
+  transition: 0.002s;
+}
+section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(to top, #4b0e99, 60%, transparent);
+  z-index: 10;
+}
+section img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+}
+section #text {
+  position: absolute;
+  color: whitesmoke;
+  text-shadow: 5px 4px 4px #4b0e99;
+  font-size: 10vw;
+  text-align: center;
+  line-height: 0.55em;
+  transform: translateY(-50%);
+}
+section #text span {
+  font-size: 0.2em;
+  letter-spacing: 2px;
+  font-weight: 400;
+}
+#btn {
+  text-decoration: none;
+  display: in;
+  padding: 8px 30px;
+  background: #4b0e99;
+  color: white;
+  font-size: 1.2em;
+  font-weight: 500;
+  letter-spacing: 2px;
+  border-radius: 40px;
+  transform: translateY(100px);
+}
+.sec {
+  position: relative;
+  padding: 100px;
+  background-color: #4b0e99;
+}
+.sec h2 {
+  font-size: 3.5em;
+  color: #fff;
+  margin-bottom: 10px;
+}
+.sec p {
+  font-size: 1.3em;
+  color: #fff;
+}
